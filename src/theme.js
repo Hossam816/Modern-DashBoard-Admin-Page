@@ -141,7 +141,7 @@ export const themsSetting = (mode) => {
                     light: colors.gray[ 100 ]
                 },
                 background: {
-                    default: colors.primary[ 900 ]
+                    default: colors.primary[ 800 ]
                 },
             } : {
                 //Light Mode
