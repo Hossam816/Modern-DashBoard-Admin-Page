@@ -49,12 +49,11 @@ const BarChart = ({ isDashboard = false }) => {
             ] }
             indexBy="country"
             margin={ { top: 50, right: 130, bottom: 50, left: 60 } }
-            padding={ 0.45 }
-            innerPadding={ 2 }
+            padding={ 0.3 }
+            innerPadding={ 0 }
             valueScale={ { type: 'linear' } }
             indexScale={ { type: 'band', round: true } }
-            valueFormat=" >+,"
-            colors={ { scheme: 'pastel2' } }
+            colors={ { scheme: 'nivo' } }
             defs={ [
                 {
                     id: 'dots',
@@ -89,7 +88,7 @@ const BarChart = ({ isDashboard = false }) => {
                     id: 'lines'
                 }
             ] }
-            borderRadius={ 5 }
+            borderRadius={ 2 }
             borderColor={ {
                 from: 'color',
                 modifiers: [
@@ -117,9 +116,9 @@ const BarChart = ({ isDashboard = false }) => {
                 legendPosition: 'middle',
                 legendOffset: -40
             } }
-            enableGridX={ true }
-            labelSkipWidth={ 20 }
-            labelSkipHeight={ 7 }
+            enableGridX={ false }
+            labelSkipWidth={ 12 }
+            labelSkipHeight={ 12 }
             labelTextColor={ {
                 from: 'color',
                 modifiers: [
