@@ -11,7 +11,7 @@ const BarChart = ({ isDashboard = false }) => {
     return (
         <ResponsiveBar
             data={ data }
-            them={ {
+            theme={ {
                 axis: {
                     domain: {
                         line: {
